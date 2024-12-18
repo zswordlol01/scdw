@@ -1,0 +1,191 @@
+<html>
+<h1>Choose a car!</h1>
+<p>click cars images for information<p>
+<style>
+        html {
+  scroll-behavior: smooth;
+}
+
+
+        body 
+            {
+            font-family: Arial, sans-serif;
+            background-color: #004aad;
+            color: white;
+            margin: 0;
+        }
+.content {
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .car {
+            border: 0px solid #ffffff;
+            padding: 20px;
+            background-color: #00477b;
+            border-radius: 8px;
+
+        }
+
+        .car h2 {
+            color: #ffffff;
+        }
+nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005bbb;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+      #backToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 18px;
+            padding: 10px;
+            background-color: #005bbb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        a:link {
+  color: cyan;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: cyan;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: navy;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: navy;
+  background-color: transparent;
+  text-decoration: none;
+}
+footer {
+            background-color: #00477b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+
+
+
+</style>
+<nav>
+        <a href="#Porsche 911 GT3 RS">Porsche 911 GT3 RS</a>
+        <a href="#Ferrari F80">Ferrari F80</a>
+        <a href="#Subaru BRZ">Subaru BRZ</a>
+        <a href="#BMW i8 coupé">BMW i8 coupé</a>
+        <a href="#MAZDA MX-5">MAZDA MX-5</a>
+        <a href="#Audi R8">Audi R8 2024</a>
+        <a href="#2025 Corvette ZR1">2025 Corvette ZR1</a>
+        <a href="#Jaguar F-TYPE">Jaguar F-TYPE</a>
+        <a href="#Lotus Emira">Lotus Emira</a>
+        <a href="#McLAREN 750S">McLAREN 750S</a>
+        
+    </nav>
+<div class="content">
+
+
+<ul>
+<div class="car" id="Porsche 911 GT3 RS">
+<h2>Porsche 911 GT3 RS<h2>
+ <a href="porsche 911 gt3rs.html"><img src="_BKOS5157_edit_V02.jpg" alt="Porsche 911 GT3 RS" width="780"></a>
+</div>
+</ul>
+
+
+<ul>
+<div class="car" id="Ferrari F80">
+
+<h2>Ferrari F80<h2>
+ <a href="ferrari f80.html"><img src="New_Ferrari_Supercar_media_-9_7d96e1ee-a162-4113-b701-a6bce944509f-800x450.jpg" alt="Ferrari F80" width="780"></a></div>
+</ul>
+
+<ul><div class="car" id="Subaru BRZ">
+
+<h2>Subaru BRZ<h2>
+ <a href="subaru brz.html"><img src="2024-subaru-brz-ts-113-658066d2e882e.avif" alt="Subaru BRZ" width="780"></a></div>
+</ul>
+<ul>
+<div class="car" id="BMW i8 coupé">
+            <h2>BMW i8 coupé<h2>
+ <a href="bmw i8 coupe.html"><img src="35c67c83286b4bedaea0f1de30a9343f.jpg" alt="BMW i8 coupé" width="780"></a></div></ul>
+<ul>
+<div class="car" id="MAZDA MX-5">
+            <h2>MAZDA MX-5<h2>
+
+
+ <a href="mazda mx-5.html"><img src="mx5_rf_cyg_exclusive_ng6wbaa_42m_rhd_1000_500.avif" alt="MAZDA MX-5" width="780"></a></div></ul>
+<ul><div class="car" id="Audi R8">
+            <h2>Audi R8 2024</h2>
+
+
+
+ <a href="audi r8.html"><img src="2023-audi-r8-gt-front-three-quarters-motion-3-1664827965.avif" alt="Audi R8" width="780"></a></div></ul>
+<ul><div class="car" id="2025 Corvette ZR1">
+            <h2>2025 Corvette ZR1</h2>
+
+
+ <a href="corvette zr1.html"><img src="2025-chevrolet-corvette-zr1-115-66a156005fa2c.avif" alt="2025 Corvette ZR1" width="780"></a></div></ul>
+
+<ul><div class="car" id="Jaguar F-TYPE"><h2>Jaguar F-TYPE</h2>
+ <a href="jaguar f type.html"><img src="680.webp" alt="Jaguar F-TYPE" width="780"></a></div></ul>
+
+<ul><div class="car" id="Lotus Emira">
+            <h2>Lotus Emira</h2>
+
+<a href="lotus emira.html"><img src="TopGear - Lotus Emira - First Drive-003_1.jpg" alt="Lotus Emira" width="780"></a></div></ul>
+<ul><div class="car" id="McLAREN 750S">
+            <h2>McLAREN 750S</h2>
+
+
+ <a href="mclaren 750s.html"><img src="2024_mclaren_750s_coupe_base_fq_oem_10_600.avif" alt="McLAREN 750S" width="780"></a></div></ul>
+</div>
+
+<button onclick="scrollToTop()" id="backToTopBtn" title="Back to Top">Back to Top</button>
+
+    <script>
+
+        window.onscroll = function() { toggleBackToTopButton() };
+
+        function toggleBackToTopButton() {
+            const backToTopBtn = document.getElementById("backToTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+<footer>
+        <p>© 2024 SPORTS CAR DATA WEB. All rights reserved.</p>
+    </footer>
+
+
+</html>
